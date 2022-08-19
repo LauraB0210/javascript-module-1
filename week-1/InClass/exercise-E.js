@@ -6,3 +6,4 @@ const greeting2 = greetingStart + ", my name is " + firsName
 
 console.log(greeting);
 console.log(greeting2)
+
