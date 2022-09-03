@@ -6,13 +6,13 @@ function nameverificacion (name, type){
 
 
     const length = name.length;
-    if (length <5 || length >10){
+    if (length >5 || length <10){
         return "Username Invalid"
     }
 
-    return "Username valid"
+    return "Username invalid"
 
 }
 
-console.log (nameverificacion("angelo", "admin"));
-console.log (nameverificacion("angelo", "noaplica"));
+console.log (nameverificacion(3, "admin"));
+console.log (nameverificacion(14, "usuari"));
