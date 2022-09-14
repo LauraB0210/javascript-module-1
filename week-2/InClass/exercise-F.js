@@ -1,18 +1,11 @@
-function nameverificacion (name, type){
-    
-    if  (type == "manager" || (type == "admin")){
-        return "Username valid"
-    }
-
-
-    const length = name.length;
-    if (length >5 || length <10){
-        return "Username Invalid"
-    }
-
-    return "Username invalid"
-
+function verificarUsuario(nombreUsuario,tipoUsuario){
+let primeraletra = nombreUsuario[0]
+if (tipoUsuario =="admin"|| tipoUsuario =="manager"){
+return "Username valid"
 }
-
-console.log (nameverificacion(3, "admin"));
-console.log (nameverificacion(14, "usuari"));
+else if (primeraletra === primeraletra.toUpperCase() && nombreUsuario.length > 5 && nombreUsuario.length <10){
+    return "Username valid"
+ }
+ else{return "Username invalid"}
+}
+console.log(verificarUsuario("Jua","manager"))

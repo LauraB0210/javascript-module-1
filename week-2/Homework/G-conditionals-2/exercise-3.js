@@ -19,6 +19,7 @@ function calculateGrade(mark) {
     return "B"
   }
   return "A"
+  
 }
 
 /* 

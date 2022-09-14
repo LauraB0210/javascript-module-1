@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const greeting = ("Buenos días");
+console.log(greeting);
